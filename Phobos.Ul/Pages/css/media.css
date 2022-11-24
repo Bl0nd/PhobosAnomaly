@@ -1,0 +1,815 @@
+/* 
+320px - 480px: dispositivos moveis
+481px - 768px: tablets, ipads
+769px - 1024px: telas pequenas, laptops 
+1025px - 1200px: desktops
+1201px - 1600px: telas grandes
+1601px - a cima: tvs e telas especiais 
+*/
+
+/* 1024px - telas pequenas e laptops */
+@media screen and (max-width: 1024px) {
+
+    /*#region header */
+    /* menu-hamburguer */
+    .bntMenu {
+        font-size: 50px;
+        padding: 20px;
+        color: white;
+        transition: .3s;
+        display: block;
+    }
+
+    .bntMenu:hover {
+        color: darkviolet;
+        transition: .3s;
+    }
+
+    .menu {
+        width: 100%;
+        height: 70px;
+        background-color: rgb(0, 0, 0, .5s);
+        position: fixed;
+        z-index: 100;
+    }
+
+    .logo {
+        width: 10%;
+        height: 70px;
+        line-height: 70px;
+        color: white;
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    .logo i {
+        font-size: 60px;
+    }
+
+    .logo span {
+        font-size: 1.5em;
+        padding-left: 20px;
+        font-weight: 800;
+    }
+
+    /* navBar */
+    .navbar {
+        height: 70px;
+        position: absolute;
+        top: 0;
+        right: 20px;
+        display: flex;
+        align-items: center;
+
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    ul.open {
+        overflow: visible;
+    }
+
+    .navbar li {
+        padding: 0 5px;
+    }
+
+    .navbar button {
+        padding: 10px 25px;
+        border: none;
+        margin-left: 10px;
+        background-color: navy;
+        transition: .3s;
+        cursor: pointer;
+    }
+
+    .navbar button:hover {
+        background-color: darkviolet;
+        transition: .3s;
+    }
+
+    .navbar li a {
+        height: 70px;
+        line-height: 70px;
+        padding: 20px 25px;
+    }
+
+    .navbar li a:hover:not(.sub a:hover) {
+        background-color: rgba(153, 50, 204, 0.726);
+    }
+
+    .sub li:hover {
+        background-color: rgba(186, 85, 211, .5);
+    }
+
+    ul.sub {
+        position: absolute;
+        display: none;
+        min-width: 160px;
+        background-color: rgb(0, 0, 0, .5s);
+        padding: 0;
+        text-align: center;
+        right: 150px;
+    }
+
+    ul.sub li {
+        display: block;
+        width: 160px;
+    }
+
+    ul.sub li a {
+        text-align: center;
+        width: 100%;
+    }
+
+    ul.sub li a {
+        text-align: center;
+        width: 100%;
+    }
+
+    /*#endregion header */
+
+    /*#region products */
+    .cardProd {
+        width: 40%;
+    }
+
+    /* #endregion services */
+
+    /* #region contact */
+    #contact {
+        background-image: url('../img/img10.png');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        padding: 8em 0;
+        color: white;
+        text-align: center;
+    }
+
+    .contactC {
+        /* propriedade alterada */
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .contactI {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 5em 0 2.5em 0;
+    }
+
+    .contactI li {
+        padding: 20px;
+    }
+
+    .contactI li input[type=text],
+    .contactI li input[type=email],
+    .contactI li input[type=password],
+    .contactI li textarea {
+        background-color: rgba(255, 255, 255, .8);
+        width: 60%;
+        padding: 10px;
+        font-size: 1.2em;
+        border: none;
+        border-radius: 8px;
+    }
+
+    .contactI li input[type=text]:focus,
+    .contactI li input[type=email]:focus,
+    .contactI li input[type=password]:focus,
+    .contactI li textarea:focus {
+        background-color: rgba(255, 255, 255, 1);
+        outline: none;
+    }
+
+    .contactI li a {
+        text-decoration: underline;
+    }
+
+    .formBtn {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    /* #endregion contact */
+}
+
+@media screen and (max-width:768px) {
+
+    /* #region domain */
+    #domain {
+        background-image: url('../img/img2.png');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        padding: 25em 0;
+        color: white;
+        text-align: center;
+    }
+
+    /* propriedade incluida */
+    #domain h4 {
+        padding: 0 20px;
+    }
+
+    .domainC {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .domainC li {
+        height: 100px;
+        line-height: 100px;
+        margin-top: 2.5em;
+    }
+
+    .domainC li input[type=text] {
+        background-color: rgba(255, 255, 255, .5);
+        width: 80%;
+        padding: 1em;
+        font-size: 1.2em;
+        border: none;
+        border-radius: 8px;
+    }
+
+    /* #endregion domain */
+
+    /* #region footer */
+    footer {
+        width: 100%;
+        height: auto;
+        background-color: #03020b;
+        padding: 50px 0;
+    }
+
+    .footerC span {
+        display: none;
+    }
+
+    .footerC {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        opacity: .6;
+        transition: .3s;
+    }
+
+    .footerC ul li {
+        height: 30px;
+        line-height: 30px;
+        transition: .3s;
+    }
+
+    .footerC ul li:hover {
+        opacity: 1;
+        transition: .3s;
+    }
+
+    .footerC h5 {
+        color: white;
+    }
+
+    /* #endregion footer */
+
+}
+
+@media screen and (max-width:480px) {
+
+    html,
+    body {
+        overflow: hidden;
+    }
+
+    /* #region home */
+    .homeC {
+        position: relative;
+        width: 100%;
+        height: 80%;
+    }
+
+    video {
+        width: 100%;
+        height: 100%;
+        z-index: 98;
+        /* propriedade adicionada */
+        display: none;
+    }
+
+    .homeI {
+        position: absolute;
+        background-color: rgba(0, 0, 0, .1);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        top: 0;
+        width: 100%;
+        /* propriedade adicionada */
+        height: 350px;
+        text-align: center;
+        z-index: 99;
+    }
+
+    .homeI h1 {
+        font-size: 6em;
+        color: white;
+        /* propriedade adicionada */
+        display: none;
+    }
+
+    .homeI h2 {
+        font-size: 4em;
+        color: white;
+    }
+
+    /* #endregion home */
+
+    /*#region products */
+    #products {
+        background-image: url('../img/img6.png');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        padding: 8.5em 0;
+        text-align: center;
+        color: white;
+    }
+
+    #products h4 {
+        margin-bottom: 1.5em;
+    }
+
+    .productsC {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .cardProd {
+        /* propriedade adicionada */
+        width: 90%;
+    }
+
+    .cardProd li {
+        height: 60px;
+        line-height: 60px;
+        background-color: white;
+        color: black;
+    }
+
+    .cardProd li:last-child {
+        height: 150px;
+        line-height: 150px;
+        background-color: white;
+        border-radius: 0 0 10px 10px;
+    }
+
+    .cardProd li.price {
+        font-size: 1.5em;
+        font-weight: 800;
+        color: white;
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
+        background-color: rgba(0, 94, 255);
+        border-radius: 50%;
+        position: relative;
+        margin: 0 auto;
+        margin-bottom: -50px;
+    }
+
+    .cardProd li.title {
+        color: white;
+        height: 130px;
+        line-height: 130px;
+        border-radius: 10px 10px 0 0;
+        background-color: #03020b;
+        font-size: 2em;
+        text-transform: capitalize;
+        padding-top: .8em;
+    }
+
+    .recomended li:not(:first-child) {
+        color: white;
+        background-color: black !important;
+    }
+
+    /* #endregion services */
+
+    /* #region services */
+    #services {
+        text-align: center;
+        font-size: 1.5em;
+        font-weight: 800;
+        background-color: black;
+        color: white;
+        padding: 50px;
+        text-transform: capitalize;
+    }
+
+    .servicesC {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        padding: 5em 0;
+    }
+
+    .servicesI {
+        width: 100%;
+        margin: 0 auto;
+        padding: 3em 0;
+    }
+
+    .servicesI table th {
+        font-size: 1.2em;
+        width: 35%;
+        height: 30px;
+        line-height: 30px;
+        padding: 10px;
+    }
+
+    .servicesI table td {
+        font-size: 1em;
+        height: 1.5em;
+        line-height: 1.5em;
+    }
+
+    .servicesI table td a {
+        height: 2.5em;
+        line-height: 2.5em;
+        padding: 5px 15px !important;
+    }
+
+    /* #endregion services */
+
+    /* #region contact */
+    #contact {
+        background-image: url('../img/img10.png');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        padding: 8em 0;
+        color: white;
+        text-align: center;
+    }
+
+    .contactC {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .contactI {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 5em 0 2.5em 0;
+    }
+
+    .contactI li input[type=text],
+    .contactI li input[type=email],
+    .contactI li input[type=password],
+    .contactI li textarea {
+        background-color: rgba(255, 255, 255, .8);
+        width: 90%;
+        padding: 10px;
+        font-size: 1.2em;
+        border: none;
+        border-radius: 8px;
+    }
+
+    .contactI li input[type=text]:focus,
+    .contactI li input[type=email]:focus,
+    .contactI li input[type=password]:focus,
+    .contactI li textarea:focus {
+        background-color: rgba(255, 255, 255, 1);
+        outline: none;
+    }
+
+    .contactI li a {
+        text-decoration: underline;
+    }
+
+    .formBtn {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    /* #endregion contact */
+
+/* #region footer */
+    footer {
+        width: 100%;
+        height: auto;
+        background-color: #03020b;
+        padding: 50px 0;
+        font-size: .8em;
+    }
+
+    .footerC span {
+        display: none;
+    }
+
+    .footerC {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        opacity: .6;
+        transition: .3s;
+    }
+
+    .footerC ul li {
+        height: 30px;
+        line-height: 30px;
+        transition: .3s;
+    }
+
+    .footerC ul li:hover {
+        opacity: 1;
+        transition: .3s;
+    }
+
+    .footerC h5 {
+        color: white;
+        position: absolute;
+    }
+
+    .footerC a i {
+        font-size: 4em;
+    }
+
+    /* #endregion footer */
+
+}
+
+@media screen and (max-width: 320px) {
+
+    /*#region header */
+    /* menu-hamburguer */
+    .bntMenu {
+        font-size: 50px;
+        padding: 20px;
+        color: white;
+        transition: .3s;
+        display: block;
+    }
+
+    .bntMenu:hover {
+        color: darkviolet;
+        transition: .3s;
+    }
+
+    .menu {
+        width: 100%;
+        height: 70px;
+        background-color: rgb(0, 0, 0, .5s);
+        position: fixed;
+        z-index: 100;
+    }
+
+    .logo {
+        width: 10%;
+        height: 70px;
+        line-height: 70px;
+        color: white;
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    .logo i {
+        font-size: 60px;
+    }
+
+    .logo span {
+        font-size: 1.5em;
+        padding-left: 20px;
+        font-weight: 800;
+    }
+
+    /* navBar */
+    .navbar {
+        height: 70px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    ul.open {
+        overflow: visible;
+    }
+
+    .navbar li {
+        padding: 0 5px;
+    }
+
+    .navbar button {
+        padding: 10px 25px;
+        border: none;
+        margin-left: 10px;
+        background-color: navy;
+        transition: .3s;
+        cursor: pointer;
+    }
+
+    .navbar button:hover {
+        background-color: darkviolet;
+        transition: .3s;
+    }
+
+    .navbar li a {
+        height: 70px;
+        line-height: 70px;
+        padding: 20px 25px;
+    }
+
+    .navbar li a:hover:not(.sub a:hover) {
+        background-color: rgba(153, 50, 204, 0.726);
+    }
+
+    .sub li:hover {
+        background-color: rgba(186, 85, 211, .5);
+    }
+
+    ul.sub {
+        position: absolute;
+        display: none;
+        min-width: 160px;
+        background-color: rgb(0, 0, 0, .5s);
+        padding: 0;
+        text-align: center;
+        right: 150px;
+    }
+
+    ul.sub li {
+        display: block;
+        width: 160px;
+    }
+
+    ul.sub li a {
+        text-align: center;
+        width: 100%;
+    }
+
+    ul.sub li a {
+        text-align: center;
+        width: 100%;
+    }
+
+    /*#endregion header */
+
+    /* #region home */
+    .homeC {
+        position: relative;
+        width: 100%;
+        height: 80%;
+    }
+
+    video {
+        width: 100%;
+        height: 100%;
+        z-index: 98;
+        /* propriedade adicionada */
+        display: none;
+    }
+
+    .homeI {
+        position: absolute;
+        background-color: rgba(0, 0, 0, .1);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        top: 0;
+        width: 100%;
+        /* propriedade adicionada */
+        height: 350px;
+        text-align: center;
+        z-index: 99;
+    }
+
+    .homeI h1 {
+        font-size: 6em;
+        color: white;
+        /* propriedade adicionada */
+        display: none;
+    }
+
+    .homeI h2 {
+        font-size: 3em;
+        color: white;
+    }
+
+    /* #endregion home */
+
+    /* #region contact */
+    #contact {
+        background-image: url('../img/img10.png');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        padding: 8em 0;
+        color: white;
+        text-align: center;
+    }
+
+    .contactC {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .contactI {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 5em 0 2.5em 0;
+    }
+
+    .contactI li input[type=text],
+    .contactI li input[type=email],
+    .contactI li input[type=password],
+    .contactI li textarea {
+        background-color: rgba(255, 255, 255, .8);
+        width: 90%;
+        padding: 10px;
+        font-size: 1.2em;
+        border: none;
+        border-radius: 8px;
+    }
+
+    .contactI li input[type=text]:focus,
+    .contactI li input[type=email]:focus,
+    .contactI li input[type=password]:focus,
+    .contactI li textarea:focus {
+        background-color: rgba(255, 255, 255, 1);
+        outline: none;
+    }
+
+    .contactI li a {
+        text-decoration: underline;
+    }
+
+    .formBtn {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    /* #endregion contact */
+
+/* #region footer */
+    footer {
+        width: 100%;
+        height: auto;
+        background-color: #03020b;
+        padding: 50px 0;
+        font-size: .8em;
+    }
+
+    .footerC span {
+        display: none;
+    }
+
+    .footerC {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        opacity: .6;
+        transition: .3s;
+    }
+
+    .footerC ul li {
+        height: 30px;
+        line-height: 30px;
+        transition: .3s;
+    }
+
+    .footerC ul li:hover {
+        opacity: 1;
+        transition: .3s;
+    }
+
+    .footerC h5 {
+        color: white;
+        position: absolute;
+    }
+
+    .footerC a i {
+        font-size: 2em;
+    }
+
+    /* #endregion footer */
+
+}

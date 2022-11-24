@@ -1,0 +1,58 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="DefaultUser.master.cs" Inherits="Phobos.Ul.DefaultUser" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet' />
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon" />
+    <title>Enxame PhobosAnomaly</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container">
+            <header>
+                <nav>
+                    <div class="menu">
+                        <a href="#home" class="logo">
+                            <i class='bx bxs-hot'></i>
+                            <span>Phobos</span>
+                        </a>
+                        <ul class="navbar open">
+                            <li><asp:Label ID="lblMessage" runat="server" ForeColor="White" Text="Session"></asp:Label></li>
+                            <a class="btnMenu"><i class='bx bx-menu'></i></a>
+                            <li><a href="#user">user</a></li>
+                            <li><a href="#movie">movie</a></li>
+                      
+                            <asp:Button ID="btnLogin" runat="server" Text="Login" CssClass="btnDefault" OnClick="btnLogin_Click" />
+                        </ul>
+                    </div>
+                </nav>
+
+            </header>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <!-- scripts -->
+        <script src="script/jquery-3.6.0.min.js"></script>
+        <!-- swiper -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <!-- AOS JS -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <!-- script local -->
+        <script src="script/script.js"></script>
+    </form>
+</body>
+</html>
