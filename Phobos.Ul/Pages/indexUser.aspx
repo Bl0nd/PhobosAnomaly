@@ -25,7 +25,7 @@
                 <asp:BoundField DataField="Genero" HeaderText="Genre" />
                 <asp:BoundField DataField="Produtora" HeaderText="Producer" />
                 <asp:BoundField DataField="Descricao" HeaderText="Description" />
-                <asp:ImageField DataImageUrlField="UrlImg" HeaderText="Image"
+                <asp:ImageField DataImageUrlField="UrlImagem" HeaderText="Image"
                 controlStyle-Width="150" ControlStyle-Height="150" />
             </Columns>
 

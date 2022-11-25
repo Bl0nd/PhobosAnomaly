@@ -105,7 +105,7 @@ namespace Phobos.DAL
             try
             {
                 Conectar();
-                cmd = new MySqlCommand("DELETE FROM Filme WHERE Id = @Id", conn);
+                cmd = new MySqlCommand("DELETE FROM Filme WHERE IdUsuario = @IdUsuario", conn);
                 cmd.Parameters.AddWithValue("@Id", objDel);
                 cmd.ExecuteNonQuery();
             }
@@ -126,7 +126,7 @@ namespace Phobos.DAL
             try
             {
                 Conectar();
-                cmd = new MySqlCommand("SELECT * FROM Filme WHERE Id = @Id", conn);
+                cmd = new MySqlCommand("SELECT * FROM Filme WHERE IdFilme = @IdFilme", conn);
                 cmd.Parameters.AddWithValue("@Id", Id);
                 dr = cmd.ExecuteReader();
                 FilmeDTO obj = null;

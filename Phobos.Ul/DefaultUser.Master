@@ -36,7 +36,7 @@
                             <li><a href="#user">user</a></li>
                             <li><a href="#movie">movie</a></li>
                       
-                            <asp:Button ID="btnLogin" runat="server" Text="Login" CssClass="btnDefault" OnClick="btnLogin_Click" />
+                            <asp:Button ID="btnLogin" runat="server" Text="Login" CssClass="btnDefault" />
                         </ul>
                     </div>
                 </nav>

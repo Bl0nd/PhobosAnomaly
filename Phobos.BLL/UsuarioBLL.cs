@@ -45,7 +45,7 @@ namespace Phobos.BLL
             AutenticaUsuario(string objNome, string objSenha)
         {
             UsuarioAtenticaDTO user = objBLL.Autenticar(objNome, objSenha); 
-            if (user == null)
+            if (user != null)
             {
                 return user;
             }

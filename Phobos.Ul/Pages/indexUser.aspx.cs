@@ -17,8 +17,8 @@ namespace Phobos.Ul.Pages
             dgv1.DataBind(); //imprimindo na tela
 
             FilmeBLL objFilme = new FilmeBLL();
-            dgv1.DataSource = objFilme.ListarFilme();  //popular objeto
-            dgv1.DataBind(); //imprimindo na tela
+            dgv2.DataSource = objFilme.ListarFilme();  //popular objeto
+            dgv2.DataBind(); //imprimindo na tela
         }
     }
 }

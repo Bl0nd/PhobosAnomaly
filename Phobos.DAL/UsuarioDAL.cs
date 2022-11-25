@@ -44,7 +44,7 @@ namespace Phobos.DAL
             try
             {
                 Conectar();
-                cmd = new MySqlCommand("SELECT Nome,Email,Descricao FROM Usuario INNER JOIN TpUsuario ON Usuario.UsuarioTp = TipoUsuario.id", conn);
+                cmd = new MySqlCommand("SELECT Nome,Email,Descricao FROM Usuario INNER JOIN tipousuario ON usuario.usuarioTp = usuarioTp", conn);
                 dr = cmd.ExecuteReader();
                 //ponteiro - lista vazia
                 List<UsuarioListDTO> lista = new List<UsuarioListDTO>();
@@ -158,7 +158,7 @@ namespace Phobos.DAL
             try
             {
                 Conectar();
-                cmd = new MySqlCommand("SELECT * FROM Usuario WHERE Id = @Id", conn);
+                cmd = new MySqlCommand("SELECT * FROM Usuario WHERE idUsuario = idUsuario", conn);
                 cmd.Parameters.AddWithValue("@Id", Id);
                 dr = cmd.ExecuteReader();
                 UsuarioDTO obj = null;
@@ -192,7 +192,7 @@ namespace Phobos.DAL
             try
             {
                 Conectar();
-                cmd = new MySqlCommand("SELECT Usuario.Id,Nome,Email,Senha,DataNascUsuario,Descricao FROM Usuario INNER JOIN TpUsuario ON Usuario.UsuarioTp = TipoUsuario.id", conn);
+                cmd = new MySqlCommand("SELECT Usuario.Id,Nome,Email,Senha,DataNascUsuario,Descricao FROM Usuario INNER JOIN tipousuario ON usuario.usuarioTp = usuarioTp", conn);
                 dr = cmd.ExecuteReader();
                 //ponteiro - lista vazia
                 List<UsuarioDTO> lista = new List<UsuarioDTO>();
