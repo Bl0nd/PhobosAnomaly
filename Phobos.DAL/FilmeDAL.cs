@@ -72,8 +72,6 @@ namespace Phobos.DAL
             }
         }
 
-
-
         //Update
         public void Editar(FilmeDTO objEdit)
         {
@@ -138,7 +136,7 @@ namespace Phobos.DAL
                     obj.Genero = dr["Genero"].ToString();
                     obj.Produtora = dr["Produtora"].ToString();
                     obj.UrlImagem = dr["UrlImagem"].ToString();
-                    obj.idClassificao = Convert.ToInt32(dr["idClassificao"]);
+                    obj.Classificacao = dr["Classificao"].ToString();
                 }
                 return obj;
             }
@@ -153,9 +151,43 @@ namespace Phobos.DAL
             }
         }
 
+
+        //Listar Admin
+        public List<FilmeDTO> ListarAdmin()
+        {
+            try
+            {
+                Conectar();
+                cmd = new MySqlCommand("SELECT Filme.Id,Titulo, Genero, Produtora, UrlImagem, Descricao FROM Filme INNER JOIN Classificacao ON Filme.Classificacao = Classificacao.Id", conn);
+                dr = cmd.ExecuteReader();
+                //ponteiro - lista vazia
+                List<FilmeDTO> Lista = new List<FilmeDTO>();
+                while (dr.Read())
+                {
+                    FilmeDTO obj = new FilmeDTO();
+                    obj.Id = Convert.ToInt32(dr["Id"]);
+                    obj.Titulo = dr["Titulo"].ToString();
+                    obj.Genero = dr["Genero"].ToString();
+                    obj.Produtora = dr["Produtora"].ToString();
+                    obj.UrlImagem = dr["UrlImagem"].ToString();
+                    obj.Classificacao = dr["Descricao"].ToString();
+
+                    //adiciar a lista
+                    Lista.Add(obj);
+                }
+                return Lista;
+
+            }
+            catch (Exception ex)
+            {
+
+                throw new Exception("Erro ao listar registros !!" + ex.Message);
+            }
+            finally
+            {
+                Desconectar();
+            }
+        }
     }
-
-    
-
 }
 

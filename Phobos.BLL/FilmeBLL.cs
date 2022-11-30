@@ -14,8 +14,7 @@ namespace Phobos.BLL
         FilmeDAL objBLL = new FilmeDAL();
  
         //Create
-        public void CadastrarFilme
-            (FilmeDTO objCadUser)
+        public void CadastrarFilme(FilmeDTO objCadUser)
         {
             objBLL.Cadastrar(objCadUser);
         }
@@ -27,15 +26,13 @@ namespace Phobos.BLL
         }
 
         //Update
-        public void EditFilme(FilmeDTO
-            objEdit)
+        public void EditFilme(FilmeDTO objEdit)
         {
             objBLL.Editar(objEdit);
         }
 
         //Delete
-        public void DeleteFilme(int
-            objDelete)
+        public void DeleteFilme(int objDelete)
         {
             objBLL.Excluir(objDelete);
         }
@@ -44,6 +41,12 @@ namespace Phobos.BLL
         public FilmeDTO SelectFilmePorId(int objModelo)
         {
             return objBLL.BuscaPorId(objModelo);
+        }
+
+        //Listar Admin
+        public List<FilmeDTO> ListarFilmeAdmin()
+        {
+            return objBLL.ListarAdmin();
         }
     }
 }

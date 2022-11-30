@@ -14,14 +14,14 @@ html {
 
 /* em */
 body {
-    overflow-x: hidden;    
+    overflow-x: hidden;
     font-size: 14px;
 }
 
-html,
-body textarea {
-    font-family: 'Popping';
-}
+    html,
+    body textarea {
+        font-family: 'Popping';
+    }
 
 h1 {
     font-size: 6.4em;
@@ -67,10 +67,10 @@ a {
     transition: .3s;
 }
 
-.btnDefault:hover {
-    background-color: rgb(177, 57, 247);
-    transition: .3s;
-}
+    .btnDefault:hover {
+        background-color: rgb(177, 57, 247);
+        transition: .3s;
+    }
 
 /* classes */
 .container {
@@ -82,17 +82,19 @@ a {
 
 /*#region header */
 /* menu-hamburguer */
-.bntMenu{
+.bntMenu {
     font-size: 50px;
     padding: 20px;
     color: white;
     transition: .3s;
     display: none;
 }
-.bntMenu:hover{
-    color:darkviolet;
-    transition: .3s;
-}
+
+    .bntMenu:hover {
+        color: darkviolet;
+        transition: .3s;
+    }
+
 .menu {
     width: 100%;
     height: 70px;
@@ -111,15 +113,15 @@ a {
     align-items: center;
 }
 
-.logo i {
-    font-size: 60px;
-}
+    .logo i {
+        font-size: 60px;
+    }
 
-.logo span {
-    font-size: 1.5em;
-    padding-left: 20px;
-    font-weight: 800;
-}
+    .logo span {
+        font-size: 1.5em;
+        padding-left: 20px;
+        font-weight: 800;
+    }
 
 /* navBar */
 .navbar {
@@ -131,33 +133,33 @@ a {
     align-items: center;
 }
 
-.navbar li {
-    padding: 0 5px;
-}
+    .navbar li {
+        padding: 0 5px;
+    }
 
-.navbar button {
-    padding: 10px 25px;
-    border: none;
-    margin-left: 10px;
-    background-color: navy;
-    transition: .3s;
-    cursor: pointer;
-}
+    .navbar button {
+        padding: 10px 25px;
+        border: none;
+        margin-left: 10px;
+        background-color: navy;
+        transition: .3s;
+        cursor: pointer;
+    }
 
-.navbar button:hover {
-    background-color: darkviolet;
-    transition: .3s;
-}
+        .navbar button:hover {
+            background-color: darkviolet;
+            transition: .3s;
+        }
 
-.navbar li a {
-    height: 70px;
-    line-height: 70px;
-    padding: 20px 25px;
-}
+    .navbar li a {
+        height: 70px;
+        line-height: 70px;
+        padding: 20px 25px;
+    }
 
-.navbar li a:hover:not(.sub a:hover) {
-    background-color: rgba(153, 50, 204, 0.726);
-}
+        .navbar li a:hover:not(.sub a:hover) {
+            background-color: rgba(153, 50, 204, 0.726);
+        }
 
 .sub li:hover {
     background-color: rgba(186, 85, 211, .5);
@@ -172,20 +174,20 @@ ul.sub {
     text-align: center;
 }
 
-ul.sub li {
-    display: block;
-    width: 160px;
-}
+    ul.sub li {
+        display: block;
+        width: 160px;
+    }
 
-ul.sub li a {
-    text-align: center;
-    width: 100%;
-}
+        ul.sub li a {
+            text-align: center;
+            width: 100%;
+        }
 
-ul.sub li a {
-    text-align: center;
-    width: 100%;
-}
+        ul.sub li a {
+            text-align: center;
+            width: 100%;
+        }
 
 /*#endregion header */
 
@@ -215,15 +217,15 @@ video {
     z-index: 99;
 }
 
-.homeI h1 {
-    font-size: 6em;
-    color: white;
-}
+    .homeI h1 {
+        font-size: 6em;
+        color: white;
+    }
 
-.homeI h2 {
-    font-size: 4em;
-    color: white;
-}
+    .homeI h2 {
+        font-size: 4em;
+        color: white;
+    }
 
 /* #endregion home */
 
@@ -241,9 +243,9 @@ video {
     text-align: center;
 }
 
-.aboutC h2 {
-    margin-bottom: 2.5em;
-}
+    .aboutC h2 {
+        margin-bottom: 2.5em;
+    }
 
 .cardTitulo {
     height: 120px;
@@ -259,13 +261,13 @@ video {
     background-color: rgba(255, 255, 255, .2);
 }
 
-.card li img {
-    width: 20vh;
-    height: 20vh;
-    border-radius: 50%;
-    margin: 2.5em 0;
-    border: 3px solid white;
-}
+    .card li img {
+        width: 20vh;
+        height: 20vh;
+        border-radius: 50%;
+        margin: 2.5em 0;
+        border: 3px solid white;
+    }
 
 .cardStars {
     color: white;
@@ -293,11 +295,11 @@ video {
     transition: .3s;
 }
 
-.socialMedia i:hover {
-    color: rgba(0, 94, 255);
-    transition: .3s;
-    cursor: pointer;
-}
+    .socialMedia i:hover {
+        color: rgba(0, 94, 255);
+        transition: .3s;
+        cursor: pointer;
+    }
 
 /* #endregion about */
 
@@ -331,9 +333,9 @@ video {
     color: white;
 }
 
-#products h4 {
-    margin-bottom: 1.5em;
-}
+    #products h4 {
+        margin-bottom: 1.5em;
+    }
 
 .productsC {
     width: 90%;
@@ -350,45 +352,45 @@ video {
     margin: 2em .5em;
 }
 
-.cardProd li {
-    height: 60px;
-    line-height: 60px;
-    background-color: white;
-    color: black;
-}
+    .cardProd li {
+        height: 60px;
+        line-height: 60px;
+        background-color: white;
+        color: black;
+    }
 
-.cardProd li:last-child {
-    height: 150px;
-    line-height: 150px;
-    background-color: white;
-    border-radius: 0 0 10px 10px;
-}
+        .cardProd li:last-child {
+            height: 150px;
+            line-height: 150px;
+            background-color: white;
+            border-radius: 0 0 10px 10px;
+        }
 
-.cardProd li.price {
-    font-size: 1.5em;
-    font-weight: 800;
-    color: white;
-    width: 100px;
-    height: 100px;
-    line-height: 100px;
-    text-align: center;
-    background-color: rgba(0, 94, 255);
-    border-radius: 50%;
-    position: relative;
-    margin: 0 auto;
-    margin-bottom: -50px;
-}
+        .cardProd li.price {
+            font-size: 1.5em;
+            font-weight: 800;
+            color: white;
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+            background-color: rgba(0, 94, 255);
+            border-radius: 50%;
+            position: relative;
+            margin: 0 auto;
+            margin-bottom: -50px;
+        }
 
-.cardProd li.title {
-    color: white;
-    height: 130px;
-    line-height: 130px;
-    border-radius: 10px 10px 0 0;
-    background-color: #03020b;
-    font-size: 2em;
-    text-transform: capitalize;
-    padding-top: .8em;
-}
+        .cardProd li.title {
+            color: white;
+            height: 130px;
+            line-height: 130px;
+            border-radius: 10px 10px 0 0;
+            background-color: #03020b;
+            font-size: 2em;
+            text-transform: capitalize;
+            padding-top: .8em;
+        }
 
 .recomended li:not(:first-child) {
     color: white;
@@ -420,24 +422,24 @@ video {
     padding: 3em 0;
 }
 
-.servicesI table th {
-    width: 35%;
-    height: 30px;
-    line-height: 30px;
-    padding: 10px;
-}
+    .servicesI table th {
+        width: 35%;
+        height: 30px;
+        line-height: 30px;
+        padding: 10px;
+    }
 
-.servicesI table td {
-    font-size: 1em;
-    height: 1.5em;
-    line-height: 1.5em;
-}
+    .servicesI table td {
+        font-size: 1em;
+        height: 1.5em;
+        line-height: 1.5em;
+    }
 
-.servicesI table td a {
-    height: 2.5em;
-    line-height: 2.5em;
-    padding: 5px 15px !important;
-}
+        .servicesI table td a {
+            height: 2.5em;
+            line-height: 2.5em;
+            padding: 5px 15px !important;
+        }
 
 /* #endregion services */
 
@@ -457,20 +459,20 @@ video {
     margin: 0 auto;
 }
 
-.domainC li {
-    height: 100px;
-    line-height: 100px;
-    margin-top: 2.5em;
-}
+    .domainC li {
+        height: 100px;
+        line-height: 100px;
+        margin-top: 2.5em;
+    }
 
-.domainC li input[type=text] {
-    background-color: rgba(255, 255, 255, .5);
-    width: 80%;
-    padding: 1em;
-    font-size: 1.2em;
-    border: none;
-    border-radius: 8px;
-}
+        .domainC li input[type=text] {
+            background-color: rgba(255, 255, 255, .5);
+            width: 80%;
+            padding: 1em;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 8px;
+        }
 
 /* #endregion domain */
 
@@ -519,33 +521,33 @@ iframe {
     padding: 5em 0 2.5em 0;
 }
 
-.contactI li {
-    padding: 20px;
-}
+    .contactI li {
+        padding: 20px;
+    }
 
-.contactI li input[type=text],
-.contactI li input[type=email],
-.contactI li input[type=password],
-.contactI li textarea {
-    background-color: rgba(255, 255, 255, .8);
-    width: 60%;
-    padding: 10px;
-    font-size: 1.2em;
-    border: none;
-    border-radius: 8px;
-}
+        .contactI li input[type=text],
+        .contactI li input[type=email],
+        .contactI li input[type=password],
+        .contactI li textarea {
+            background-color: rgba(255, 255, 255, .8);
+            width: 60%;
+            padding: 10px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 8px;
+        }
 
-.contactI li input[type=text]:focus,
-.contactI li input[type=email]:focus,
-.contactI li input[type=password]:focus,
-.contactI li textarea:focus {
-    background-color: rgba(255, 255, 255, 1);
-    outline: none;
-}
+            .contactI li input[type=text]:focus,
+            .contactI li input[type=email]:focus,
+            .contactI li input[type=password]:focus,
+            .contactI li textarea:focus {
+                background-color: rgba(255, 255, 255, 1);
+                outline: none;
+            }
 
-.contactI li a {
-    text-decoration: underline;
-}
+        .contactI li a {
+            text-decoration: underline;
+        }
 
 .formBtn {
     display: flex;
@@ -572,20 +574,20 @@ footer {
     transition: .3s;
 }
 
-.footerC ul li {
-    height: 30px;
-    line-height: 30px;
-    transition: .3s;
-}
+    .footerC ul li {
+        height: 30px;
+        line-height: 30px;
+        transition: .3s;
+    }
 
-.footerC ul li:hover {
-    opacity: 1;
-    transition: .3s;
-}
+        .footerC ul li:hover {
+            opacity: 1;
+            transition: .3s;
+        }
 
-.footerC h5 {
-    color: white;
-}
+    .footerC h5 {
+        color: white;
+    }
 
 /* #endregion footer */
 
@@ -599,9 +601,9 @@ footer {
     padding: 30em 0;
 }
 
-.geral h4 {
-    padding: 2.5em 0;
-}
+    .geral h4 {
+        padding: 2.5em 0;
+    }
 
 /* #endregion thanks.html */
 
@@ -615,29 +617,50 @@ footer {
     padding: 5em 0;
 }
 
-#login h4 {
-    padding: 1em 0;
-}
+    #login h4 {
+        padding: 1em 0;
+    }
 
+    .cxTexto{
+        width:100%;
+    }
 /* #endregion login */
 
 /*#region defaultUser*/
-.base{
-    width:100%;
-    min-height:800px;
-    padding:70px;
-    background-color:aquamarine;
+.base {
+    width: 100%;
+    min-height: 800px;
+    padding: 70px;
+    background-color: aquamarine;
 }
 
-.base h1{
-    text-align:center;
-    color:aliceblue;
+.base h1 {
+        font-size: 3em;
+        text-align: center;
+        color: aliceblue;
+        padding-bottom: 20px;
+    }
 
-}
+.base table {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        text-align: center;
+        color: aliceblue;
+        border-bottom: 1px solid aliceblue;
+    }
 
-.base table{
-    text-align:center;
-    color:aliceblue;
-    border-bottom:1px solid;
-}
+.base table th {
+            font-size: 1.5em;
+            padding: 10px 0;
+            border-bottom: 1px solid aliceblue;
+        }
+.base table td {
+            height: 1.2em;
+            line-height: 1.2em;
+            padding: 10px;
+        }
+.base table td:last-child {
+                padding-bottom: 50px;
+            }
 /*#endregion defaultUser*/

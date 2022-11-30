@@ -13,7 +13,7 @@ namespace Phobos.DTO
         public string Genero { get; set; }
         public string Produtora { get; set; }
         public string UrlImagem { get; set; }
-        public int idClassificao { get; set; }
+        public string Classificacao { get; set; }
         public string Descricao { get; set; }
     }
 }

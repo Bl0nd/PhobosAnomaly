@@ -31,11 +31,12 @@
                             <span>Phobos</span>
                         </a>
                         <ul class="navbar open">
-                            <li><asp:Label ID="lblMessage" runat="server" ForeColor="White" Text="Session"></asp:Label></li>
+                            <li>
+                                <asp:Label ID="lblMessage" runat="server" ForeColor="White" Text="Session"></asp:Label></li>
                             <a class="btnMenu"><i class='bx bx-menu'></i></a>
                             <li><a href="#user">user</a></li>
                             <li><a href="#movie">movie</a></li>
-                      
+
                             <asp:Button ID="btnLogin" runat="server" Text="Login" CssClass="btnDefault" />
                         </ul>
                     </div>
@@ -54,5 +55,25 @@
         <!-- script local -->
         <script src="script/script.js"></script>
     </form>
+
+    <!-- footer -->
+    <footer>
+        <div class="footerC">
+            <ul>
+                <li><a href="../index.aspx#home">home</a></li>
+                <li><a href="../index.aspx#about">about</a></li>
+                <li><a href="../index.aspx#emphasis">emphasis</a></li>
+                <li><a href="../index.aspx#products">products</a></li>
+                <li><a href="../index.aspx#services">services</a></li>
+            </ul>
+            <ul>
+                <li><a href="../index.aspx#domain">domain</a></li>
+                <li><a href="../index.aspx#localization">localization</a></li>
+                <li><a href="../index.aspx#contact">contact</a></li>
+            </ul>
+            <a href="../index.aspx#home" class="logo"><i class='bx bxs-invader'></i><span>Phobos</span></a>
+            <h5>&copy; Copyright all rights reserved 2012</h5>
+        </div>
+    </footer>
 </body>
 </html>
