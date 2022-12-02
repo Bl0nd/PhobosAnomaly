@@ -49,7 +49,7 @@ namespace Phobos.Ul
                             break;
                         case 2:
                             Session["Usuario"] = txtNome.Text.Trim().ToUpper();
-                            Response.Redirect("/Pages/indexUser.aspx");
+                            Response.Redirect("/Pages/IndexUser.aspx");
                             //lblMessage.Text = "User";
                             Limpar();
                             break;

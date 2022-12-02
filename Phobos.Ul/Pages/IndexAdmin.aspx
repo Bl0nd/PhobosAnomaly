@@ -6,7 +6,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="base">
         <h1 id="user">Users</h1>
-        <asp:GridView runat="server" ID="dgv1" GridLines="None" AutoGenerateColumns="false" ShowFooter="true" DataKeyNames="Id" OnRowCommand="dgv1_RowCommand" OnRowUpdating="dgv1_RowUpdating" OnRowDeleting="dgv1_RowDeleting" OnRowEditing="dgv1_RowEditing"
+        <asp:GridView runat="server" ID="dgv1" GridLines="None" AutoGenerateColumns="false" ShowFooter="true" DataKeyNames="idUsuario" OnRowCommand="dgv1_RowCommand" OnRowUpdating="dgv1_RowUpdating" OnRowDeleting="dgv1_RowDeleting" OnRowEditing="dgv1_RowEditing"
             OnRowCancelingEdit="dgv1_RowCancelingEdit">
             <Columns>
                 <%--template Nome--%>
@@ -28,7 +28,7 @@
                         <asp:Label runat="server" Text='<%#Eval("Email") %>' />
                     </ItemTemplate>
                     <EditItemTemplate>
-                        <asp:TextBox runat="server" ID="txtEmailUsuario" MaxLength="50" Text='<%#Eval("Emmail") %>' />
+                        <asp:TextBox runat="server" ID="txtEmailUsuario" MaxLength="50" Text='<%#Eval("Email") %>' />
                     </EditItemTemplate>
                     <FooterTemplate>
                         <asp:TextBox runat="server" ID="txtEmailUsuarioFooter" MaxLength="50" />

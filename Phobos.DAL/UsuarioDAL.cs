@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Phobos.DAL
 {
-    public class UsuarioDAL:Conexao
+    public class UsuarioDAL : Conexao
     {
         //Crud
 
@@ -30,7 +30,7 @@ namespace Phobos.DAL
             catch (Exception ex)
             {
 
-                throw new Exception("Erro ao cadastrar !!" +ex.Message);
+                throw new Exception("Erro ao cadastrar !!" + ex.Message);
             }
             finally
             {
@@ -51,9 +51,9 @@ namespace Phobos.DAL
                 while (dr.Read())
                 {
                     UsuarioListDTO obj = new UsuarioListDTO();
-                    obj.Nome = dr["Nome"].ToString();
-                    obj.Email = dr["Email"].ToString();
-                    obj.Descricao = dr["Descricao"].ToString();
+                    obj.Nome = dr["nome"].ToString();
+                    obj.Email = dr["email"].ToString();
+                    obj.Descricao = dr["descricao"].ToString();
 
                     //adicionar a lista
                     lista.Add(obj);
@@ -70,7 +70,7 @@ namespace Phobos.DAL
                 Desconectar();
             }
         }
- 
+
         //Update
         public void Editar(UsuarioDTO objEdit)
         {
@@ -89,12 +89,12 @@ namespace Phobos.DAL
             catch (Exception ex)
             {
 
-                throw new Exception("Erro ao editar usuario !!" +ex.Message);
+                throw new Exception("Erro ao editar usuario !!" + ex.Message);
             }
-            finally 
+            finally
             {
                 Desconectar();
-            } 
+            }
         }
 
         //Delete
@@ -104,15 +104,15 @@ namespace Phobos.DAL
             {
                 Conectar();
                 cmd = new MySqlCommand("DELETE FROM Usuario WHERE Id = @Id", conn);
-                cmd.Parameters.AddWithValue("@Id",objDel);
+                cmd.Parameters.AddWithValue("@Id", objDel);
                 cmd.ExecuteNonQuery();
             }
             catch (Exception ex)
             {
 
-                throw new Exception("Erro ao eliminar registro"+ex.Message);
+                throw new Exception("Erro ao eliminar registro" + ex.Message);
             }
-            finally 
+            finally
             {
                 Desconectar();
             }
@@ -120,7 +120,7 @@ namespace Phobos.DAL
 
 
 
- 
+
         //Autenticar
         public UsuarioAtenticaDTO Autenticar(string objNome, string objSenha)
         {
@@ -128,7 +128,7 @@ namespace Phobos.DAL
             {
                 Conectar();
                 cmd = new MySqlCommand("SELECT nome,senha,usuarioTp FROM usuario WHERE nome = @nome AND senha = @senha;", conn);
-                cmd.Parameters.AddWithValue("@Nome",objNome);
+                cmd.Parameters.AddWithValue("@Nome", objNome);
                 cmd.Parameters.AddWithValue("@Senha", objSenha);
                 dr = cmd.ExecuteReader();
                 UsuarioAtenticaDTO obj = null;
@@ -141,12 +141,12 @@ namespace Phobos.DAL
                 }
                 return obj;
             }
-             catch (Exception ex)
+            catch (Exception ex)
             {
 
-                throw new Exception("Usuário não cadastrado !!" +ex.Message);
+                throw new Exception("Usuário não cadastrado !!" + ex.Message);
             }
-            finally 
+            finally
             {
                 Desconectar();
             }
@@ -177,12 +177,12 @@ namespace Phobos.DAL
             catch (Exception ex)
             {
 
-                throw new Exception("Erro ao buscar registro !!"+ex.Message);
+                throw new Exception("Erro ao buscar registro !!" + ex.Message);
             }
-            finally 
+            finally
             {
                 Desconectar();
-            } 
+            }
         }
 
         //Listar Admin

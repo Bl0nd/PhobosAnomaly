@@ -113,5 +113,56 @@ namespace Phobos.Ul.Pages
 
             lblMessage.Text = "O Filme " + objModeloFilme.Titulo + " foi eliminado com sucesso!!";
         }
+        //messageBox com JS
+        public void MsgBox(String ex, Page pg, Object obj)
+        {
+            string s = "<SCRIPT language='javascript'>alert('" + ex.Replace("\r\n", "\\n").Replace("'", "") + "'); </SCRIPT>";
+            Type cstype = obj.GetType();
+            ClientScriptManager cs = pg.ClientScript;
+            cs.RegisterClientScriptBlock(cstype, s, s.ToString());
+        }
+
+        //validacao Filme
+        private bool ValidaPage()
+        {
+            bool PageValido;
+            if (string.IsNullOrEmpty((dgv2.FooterRow.FindControl("txtTituloFilmeFooter") as TextBox).Text.Trim()))
+            {
+                MsgBox("Digite o Titulo!", Page, this);
+                (dgv2.FooterRow.FindControl("txtTituloFilmeFooter") as TextBox).Focus();
+                PageValido = false;
+            }
+            else if (string.IsNullOrEmpty((dgv2.FooterRow.FindControl("txtGeneroFilmeFooter") as TextBox).Text.Trim()))
+            {
+                MsgBox("Digite o Genero!", Page, this);
+                (dgv2.FooterRow.FindControl("txtGeneroFilmeFooter") as TextBox).Focus();
+                PageValido = false;
+            }
+            else if (string.IsNullOrEmpty((dgv2.FooterRow.FindControl("txtProdutoraFilmeFooter") as TextBox).Text.Trim()))
+            {
+                MsgBox("Digita o Produtora!", Page, this);
+                (dgv2.FooterRow.FindControl("txtProdutoraFilmeFooter") as TextBox).Focus();
+                PageValido = false;
+            }
+            else if ((dgv2.FooterRow.FindControl("rbl1") as RadioButtonList).SelectedIndex < 0)
+            {
+                MsgBox("Escolha uma das opções!", this.Page, this);
+                (dgv2.FooterRow.FindControl("rbl1") as RadioButtonList).Focus();
+                PageValido = false;
+
+            }
+            else if (!(dgv2.FooterRow.FindControl("fUp1") as FileUpload).HasFile)
+            {
+                MsgBox("Selecione uma imagem", Page, this);
+                (dgv2.FooterRow.FindControl("fUp1") as FileUpload).Focus();
+                PageValido = false;
+            }
+
+            else
+            {
+                PageValido = true;
+            }
+            return PageValido;
+        }
     }
 }

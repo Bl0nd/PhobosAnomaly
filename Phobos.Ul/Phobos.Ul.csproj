@@ -87,6 +87,13 @@
     <Content Include="css\media.css" />
     <Content Include="css\reset.css" />
     <Content Include="css\style.css" />
+    <Content Include="img\add.png" />
+    <Content Include="img\addB.png" />
+    <Content Include="img\cancel.png" />
+    <Content Include="img\delete.png" />
+    <Content Include="img\deleteB.png" />
+    <Content Include="img\edit.png" />
+    <Content Include="img\editB.png" />
     <Content Include="img\gato1.png" />
     <Content Include="img\gato2.png" />
     <Content Include="img\ghos2t.png" />
@@ -114,6 +121,8 @@
     <Content Include="img\perfil7.png" />
     <Content Include="img\perfil8.png" />
     <Content Include="img\perfil9.png" />
+    <Content Include="img\save.png" />
+    <Content Include="img\saveB.png" />
     <Content Include="Index.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="Pages\css\media.css" />
