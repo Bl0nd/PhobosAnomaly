@@ -128,6 +128,6 @@
 
         </asp:GridView>
         <br />
-        <asp:Label runat="server" ID="lblMessage" Text="Label" />
+        <asp:Label ID="lblMessage" ForeColor="White" runat="server" Text="Label" />
     </div>
 </asp:Content>
