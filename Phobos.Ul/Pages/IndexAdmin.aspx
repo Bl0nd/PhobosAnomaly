@@ -16,6 +16,13 @@
                     </ItemTemplate>
                     <EditItemTemplate>
                         <asp:TextBox runat="server" ID="txtNomeUsuario" MaxLength="50" Text='<%#Eval("Nome") %>' />
+                        <br />
+                        <asp:RequiredFieldValidator
+                            ID="NomeUsuario"
+                            runat="server"
+                            ErrorMessage="Digite o nome !!"
+                            ForeColor="Red"
+                            ControlToValidate="txtNomeUsuario" />
                     </EditItemTemplate>
                     <FooterTemplate>
                         <asp:TextBox runat="server" ID="txtNomeUsuarioFooter" MaxLength="50" />
@@ -29,6 +36,13 @@
                     </ItemTemplate>
                     <EditItemTemplate>
                         <asp:TextBox runat="server" ID="txtEmailUsuario" MaxLength="50" Text='<%#Eval("Email") %>' />
+                        <br />
+                        <asp:RequiredFieldValidator
+                            ID="EmailUsuario"
+                            runat="server"
+                            ErrorMessage="Digite seu email !!"
+                            ForeColor="Red"
+                            ControlToValidate="txtEmailUsuario" />
                     </EditItemTemplate>
                     <FooterTemplate>
                         <asp:TextBox runat="server" ID="txtEmailUsuarioFooter" MaxLength="50" />
@@ -42,6 +56,13 @@
                     </ItemTemplate>
                     <EditItemTemplate>
                         <asp:TextBox runat="server" ID="txtSenhaUsuario" MaxLength="6" Text='<%#Eval("Senha") %>' />
+                        <br />
+                        <asp:RequiredFieldValidator
+                            ID="SenhaeUsuario"
+                            runat="server"
+                            ErrorMessage="Digite sua senha !!"
+                            ForeColor="Red"
+                            ControlToValidate="txtSenhaUsuario" />
                     </EditItemTemplate>
                     <FooterTemplate>
                         <asp:TextBox runat="server" ID="txtSenhaUsuarioFooter" MaxLength="50" />
@@ -55,6 +76,13 @@
                     </ItemTemplate>
                     <EditItemTemplate>
                         <asp:TextBox runat="server" ID="txtDataNascUsuario" MaxLength="50" Text='<%#Eval("DataNascUsuario") %>' />
+                        <br />
+                        <asp:RequiredFieldValidator
+                            ID="DataNascUsuario"
+                            runat="server"
+                            ErrorMessage="Digite sua data de nascimento !!"
+                            ForeColor="Red"
+                            ControlToValidate="txtDataNascUsuario" />
                     </EditItemTemplate>
                     <FooterTemplate>
                         <asp:TextBox runat="server" ID="txtDataNascUsuarioFooter" MaxLength="50" />
@@ -92,7 +120,7 @@
                     </EditItemTemplate>
                     <FooterTemplate>
                         <asp:ImageButton runat="server" ID="btnAdicionar" ImageUrl="~/img/addB.png" ToolTip="Adicionar" Width="30" Height="30" CommandName="Add" />
-                 </FooterTemplate>
+                    </FooterTemplate>
                 </asp:TemplateField>
 
             </Columns>
