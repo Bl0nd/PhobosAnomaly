@@ -11,11 +11,11 @@ namespace Phobos.Ul
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["Usuario"]==null)
+            if (Session["Usuario"] == null)
             {
                 Response.Redirect("..login.aspx");
             }
-            lblMessage.Text = "Bem vindo " + Session["Usuario"] + " a Phoboa !!";
+            lblMessage.Text = "Bem vindo " + Session["Usuario"] + " a Phobos Anomaly !!";
         }
 
         protected void btnLogin_Click(object sender, EventArgs e)
