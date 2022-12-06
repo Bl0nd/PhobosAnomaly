@@ -99,6 +99,7 @@
                             <asp:ListItem Value="1" Text=" Administrador" />
                             <asp:ListItem Value="2" Text=" Outros" />
                         </asp:RadioButtonList>
+                        <asp:RequiredFieldValidator ID="rblist" runat="server" ErrorMessage="Selecione uma opção !!" ForeColor="Red" ControlToValidate="rbl1" />
                     </EditItemTemplate>
                     <FooterTemplate>
                         <asp:RadioButtonList runat="server" ID="rbl1">
